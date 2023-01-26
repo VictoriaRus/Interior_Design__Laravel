@@ -12,9 +12,9 @@
 The site consists of several parts:
 - App:
    1. main page;
-2. about me;
-3. portfolio;
-4. contacts;
+   2. about me;
+   3. portfolio;
+   4. contacts;
 - Admin panel:
    1. Adding, editing and deleting works;
 - Registration authorization;
