@@ -1,8 +1,6 @@
 @extends('layouts.base')
 
 @section('content')
-
-
     <div class="container-fluid">
         <hr>
         <div class="row justify-content-center contakts">
@@ -36,24 +34,22 @@
                         <li> <i class="fa fa-check"></i> Достаточно оформить заявку по телефону или e-mail;</li>
                     </ul>
                 </div>
-
             </div>
 
         </div>
 
-
         <div class="row justify-content-center  contacts">
             <div class="col-sm-3">
                 <p class="cont"><b>Контакты:</b>
-                <p>
+                </p>
                 <p>Минск, Беларусь
-                <p>
+                </p>
                 <p>Русецкая Виктория
-                <p>
+                </p>
                 <p>телефон: +375-44-543-32-43
-                <p>
+                </p>
                 <p>почта: des.rusetskaya@gmail.com
-                <p>
+                </p>
             </div>
 
             <div class="col-sm-3">
@@ -84,16 +80,17 @@
                     </div>
                     <div class="form-group">
                         <label for="email">Введите E-mail:</label>
-                        <input id="email" name="email" type="email" placehоlder="Введите E-mail" class="form-control">
+                        <input id="email" name="email" type="email" placehоlder="Введите E-mail"
+                            class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="tel">Введите телефон:</label>
-                        <input id="tel" name="tel" type="tel" placehоlder="Введите телефон" class="form-control">
+                        <input id="tel" name="tel" type="tel" placehоlder="Введите телефон"
+                            class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="messege">Сообщение</label>
-                        <textarea id="messege" name="messege" type="text" cols="40" rows="3"
-                            class="form-control"></textarea>
+                        <textarea id="messege" name="messege" type="text" cols="40" rows="3" class="form-control"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="file">Прикрепить файл:</label>
@@ -106,6 +103,4 @@
             </div>
         </div>
     </div>
-
-
 @endsection

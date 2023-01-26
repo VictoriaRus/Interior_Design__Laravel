@@ -1,4 +1,4 @@
-@extends("layouts.base")
+@extends('layouts.base')
 
 @push('styles')
     <link rel="stylesheet" type="text/css" href="{{ asset('portfolio.css') }}" />
@@ -22,5 +22,4 @@
             </div>
         </div>
     </div>
-
 @endsection

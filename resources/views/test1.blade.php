@@ -2,5 +2,4 @@
 
 @section('content')
     test1
-
 @endsection

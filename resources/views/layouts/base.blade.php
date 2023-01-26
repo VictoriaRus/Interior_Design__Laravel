@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
 
-
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet"
         href="{{ asset('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css') }}"
@@ -49,15 +47,6 @@
                                     <li><a href="{{ asset('/') }}">Главная</a></li>
                                     <li><a href="{{ asset('about') }}">Обо мне</a></li>
                                     <li><a href="{{ asset('portfolio') }}">Интерьеры</a></li>
-                                    <!--<li class="menu-item-has-children"><a href="#">Интерьеры</a>
-                                        <span class="sidebar-menu-arrow"></span>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Квартира</a></li>
-                                            <li><a href="#">Кафе</a></li>
-                                            <li><a href="#">Офис</a></li>
-                                            <li><a href="#">Рестаран</a></li>
-                                        </ul>
-                                    </li>-->
                                     <li><a href="#">Проектирование мебели</a></li>
                                     <li><a href="#">Блог</a></li>
                                     <li><a href="{{ asset('contact') }}">Контакты</a></li>
@@ -78,11 +67,9 @@
                     <div class="wrapper">
                         <section class="text" id="menu">
                             <a class="navbar-brand a d-none d-lg-inline" href="{{ asset('about') }}">Обо мне</a>
-                            <a class="navbar-brand a d-none d-lg-inline"
-                                href="{{ asset('portfolio') }}">Интерьеры</a>
+                            <a class="navbar-brand a d-none d-lg-inline" href="{{ asset('portfolio') }}">Интерьеры</a>
                             <a class="navbar-brand a d-none d-lg-inline" href="#">Проектирование мебели</a>
                             <a class="navbar-brand a d-none d-lg-inline" href="{{ asset('contact') }}">Контакты</a>
-
 
                             @guest
                                 <a class="btn btn-outline-secondary" href="{{ route('login') }}">{{ __('Войти') }}</a>
@@ -104,7 +91,8 @@
                                         {{ Auth::user()->name }}
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
                                                     document.getElementById('logout-form').submit();">
                                             {{ __('Выйти') }}
                                         </a>
@@ -118,11 +106,8 @@
                             </ul>
                         </section>
                     </div>
-
-
                 </div>
             </div>
-
         </div>
 
     </header>
@@ -130,7 +115,7 @@
 
     <!--тело сайта-->
 
-    @yield("content")
+    @yield('content')
     <br>
     <!--тело сайта конец-->
 
@@ -161,8 +146,9 @@
 
                             </ul>
                         </div>
-                        <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a
-                                href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i
+                        <div class="col-lg-3 item social"><a href="#"><i
+                                    class="icon ion-social-facebook"></i></a><a href="#"><i
+                                    class="icon ion-social-twitter"></i></a><a href="#"><i
                                     class="icon ion-social-snapchat"></i></a><a
                                 href="{{ asset('https://www.instagram.com/rusetskaya_designer/') }}"><i
                                     class="icon ion-social-instagram"></i></a>
@@ -177,8 +163,6 @@
     @stack('picture')
     <!--подвал-->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="{{ asset('jquery-3.5.1.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">

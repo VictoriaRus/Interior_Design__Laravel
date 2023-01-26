@@ -1,4 +1,4 @@
-@extends("layouts.base")
+@extends('layouts.base')
 @push('picture')
     <div class="col-sm-12">
         <img src="1-4.jpg" style="width: 100%">

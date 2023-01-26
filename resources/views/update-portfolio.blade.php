@@ -35,15 +35,14 @@
                                             <strong>{{ $message }}</strong>
                                         </p>
                                     @enderror
-                                    <textarea class="form-control" id="body" name="body"
-                                        row="4">{{ $obj->body }}</textarea>
+                                    <textarea class="form-control" id="body" name="body" row="4">{{ $obj->body }}</textarea>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="picture1" class="col-sm-2 col-form-label">Изменить изображение</label>
                                 <div class="col-sm-10">
-                                    <input type="file" class="form-control-file" value="{{ $obj->picture }}" name="picture1"
-                                        id="picture1">
+                                    <input type="file" class="form-control-file" value="{{ $obj->picture }}"
+                                        name="picture1" id="picture1">
                                 </div>
                             </div>
                             <div class="form-group row">

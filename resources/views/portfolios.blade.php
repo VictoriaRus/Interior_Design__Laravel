@@ -1,4 +1,4 @@
-@extends("layouts.base")
+@extends('layouts.base')
 @push('styles')
     <link rel="stylesheet" type="text/css" href="{{ asset('portfolio.css') }}" />
 @endpush
@@ -14,13 +14,13 @@
             @foreach ($objs as $one)
                 <div id="test" class="col-sm-3 main-portfolio">
                     <div class='holder'>
-                        <a href="{{ asset('work/' . $one->id) }}" >
+                        <a href="{{ asset('work/' . $one->id) }}">
                             <img class="card-img-top" src="{{ asset('uploads/' . $one->user_id . '/s' . $one->picture) }}"
                                 alt="{{ $one->name }}">
                         </a>
                         <div class='block'>
                             <br>
-                            <a href="{{ asset('work/' . $one->id) }}" >
+                            <a href="{{ asset('work/' . $one->id) }}">
                                 <h6 class="navbar-brand a">{{ $one->name }}</h6>
                             </a>
                         </div>
@@ -29,5 +29,4 @@
             @endforeach
         </div>
     </div>
-
 @endsection

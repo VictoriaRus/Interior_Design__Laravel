@@ -7,31 +7,27 @@
             <div class="col-sm-3" id="first" style="text-align: center;">
 
                 <div class="card bg-ligh card-my" id="block" style="width: 19rem;">
-                    <button id="button"
-                        style="outline: none; width: 30px; background-color: #ffffff; border: none;">	
-                        	&#128900</button>
+                    <button id="button" style="outline: none; width: 30px; background-color: #ffffff; border: none;">
+                        &#128900</button>
                     <h5>Интерьер</h5>
                     <h6>Виктория</h5>
-
                         <img class="card-img-top my-img" src="{{ asset('otziv.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Разработаю уникальный дизайн проект дома или квартиры с реальными материалами, которые можно купить в Вашем городе за срок от 1-го месяца</p>
+                            <p class="card-text">Разработаю уникальный дизайн проект дома или квартиры с реальными
+                                материалами, которые можно купить в Вашем городе за срок от 1-го месяца</p>
                         </div>
                 </div>
             </div>
-
-
             <div class="col-sm-3" id="second">
                 <img class="my-photo" src="{{ asset('my.jpg') }}" alt="Card image cap">
             </div>
-            <!-- Optional: some overlay text to describe the video -->
             <div class="col-sm-6 rezume" id="third">
-
                 <div class="work">
                     <h3>Меня зовут <b>Виктория Русецкая</b></h3>
                     <br>
                     <p>Приветствую Вас !</p>
-                    <p>Я занимаюсь созданием проектов интерьера для частных и корпоративных заказчиков с 2013 года, так же существляю конструкторскую разработку корпусной мебели из проекта.</p>
+                    <p>Я занимаюсь созданием проектов интерьера для частных и корпоративных заказчиков с 2013 года, так же
+                        существляю конструкторскую разработку корпусной мебели из проекта.</p>
                     <ul><ins>Опыт работы:</ins>
                         <br>
                         <br>
@@ -55,17 +51,16 @@
                     </ul>
                     <div class="socseti">
                         <a class="navbar-brand a" href={{ asset('https://t.me/interior_project') }}>TELEGRAM.</a>
-                        <a class="navbar-brand a" href={{ asset('https://www.instagram.com/rusetskaya_designer/') }}>INSTAGRAM.</a>
+                        <a class="navbar-brand a"
+                            href={{ asset('https://www.instagram.com/rusetskaya_designer/') }}>INSTAGRAM.</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
     <div class="container-fluid" class="about"
         style="background-color: #eae6e1;  margin-top: 0px; padding-top: 80px; padding-bottom: 60px;">
-
         <div class="row">
             <div class="col-sm-4">
                 ЭТАПЫ РАБОТЫ
@@ -133,7 +128,6 @@
         </div>
         <div class="row">
             <div class="col-sm-4">
-
             </div>
             <div class="col-sm-4">
                 <div class="feature d-flex">
@@ -164,11 +158,9 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="container-fluid" class="about" style=" padding-top: 80px; padding-bottom: 60px; margin-top: 0%">
-
         <div class="row">
             <div class="col-sm-4">
                 ОТЗЫВЫ НАШИХ КЛИЕНТОВ
@@ -188,7 +180,6 @@
                         qui blanditiis praesentium voluptatum deleniti atque
                         corrupti quos dolores et quas molestias excepturi sint."</p>
                 </div>
-
             </div>
             <div class="col-sm-4 reviews">
                 <h5>Minsk</h5>
@@ -204,18 +195,7 @@
                         qui blanditiis praesentium voluptatum deleniti atque
                         corrupti quos dolores et quas molestias excepturi sint."</p>
                 </div>
-
             </div>
-
-
         </div>
-
-
     </div>
-
-
-
-
-
-
 @endsection

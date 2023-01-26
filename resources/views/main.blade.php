@@ -13,7 +13,8 @@
                     <h1>PROJECT</h1>
                     <br>
                     <h6>Современный интерьер квартиры:</h6>
-                    <a href="{{ asset('https://drive.google.com/file/d/1QZi-34SaEt4I4uycpYhEshPB2ccZLi45/view?usp=sharing')}}" target="_blank" class="btn btn-outline-secondary text-uppercase">Смотреть проект</a>
+                    <a href="{{ asset('https://drive.google.com/file/d/1QZi-34SaEt4I4uycpYhEshPB2ccZLi45/view?usp=sharing') }}"
+                        target="_blank" class="btn btn-outline-secondary text-uppercase">Смотреть проект</a>
                     <br>
                     <br>
                     <br>
@@ -39,9 +40,7 @@
                                 href={{ asset('https://www.instagram.com/rusetskaya_designer/') }}>INSTAGRAM.</a>
                         </div>
                     </div>
-
                 </div>
-
             </div>
 
             <section id="section05" class="section demo d-none d-lg-block">
@@ -53,11 +52,9 @@
     </div>
     <section class="content" id="section06">
         <h3 id="h3">Цены на дизайн-проекты</h3>
-        <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
         <section class="pricing py-5">
             <div class="container">
                 <div class="row">
-                    <!-- Free Tier -->
                     <div class="col-lg-4">
                         <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
@@ -76,25 +73,24 @@
                                     <li><span class="fa-li"><i class="fa fa-check"></i></span>План
                                         демонтажа/монтажа конструкций;<br>План напольного покрытия;<br>План растоновки
                                         розеток, светильников и выключателей;</li>
-                                    <li><span class="fa-li"><i
-                                                class="fa fa-check"></i></span><strong>Спецификация
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Спецификация
                                             материалов</strong></li>
-                                    <li class="text-muted"><span class="fa-li"><i
-                                                class="fa fa-times"></i></span>3D визуализация</li>
-                                    <li class="text-muted"><span class="fa-li"><i
-                                                class="fa fa-times"></i></span>Развертки стен по некоторым помещениям
+                                    <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>3D
+                                        визуализация</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Развертки
+                                        стен по некоторым помещениям
                                     </li>
-                                    <li class="text-muted"><span class="fa-li"><i
-                                                class="fa fa-times"></i></span>Подбор материалов</li>
-                                    <li class="text-muted"><span class="fa-li"><i
-                                                class="fa fa-times"></i></span>Авторский надзор</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Подбор
+                                        материалов</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Авторский
+                                        надзор</li>
                                 </ul>
                                 <a href="{{ asset('contact') }}"
                                     class="btn btn-block btn-outline-secondary text-uppercase">Заказать проект</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Plus Tier -->
+
                     <div class="col-lg-4">
                         <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
@@ -119,17 +115,17 @@
                                             визуализация</strong></li>
                                     <li><span class="fa-li"><i class="fa fa-check"></i></span>Развертки стен по
                                         некоторым помещениям</li>
-                                    <li class="text-muted"><span class="fa-li"><i
-                                                class="fa fa-times"></i></span>Подбор материалов</li>
-                                    <li class="text-muted"><span class="fa-li"><i
-                                                class="fa fa-times"></i></span>Авторский надзор</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Подбор
+                                        материалов</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Авторский
+                                        надзор</li>
                                 </ul>
                                 <a href="{{ asset('contact') }}"
                                     class="btn btn-block btn-outline-secondary text-uppercase">Заказать проект</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Pro Tier -->
+
                     <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body">
@@ -158,8 +154,8 @@
                                         некоторым помещениям</li>
                                     <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Подбор
                                             материалов</strong></li>
-                                    <li><span class="fa-li"><i
-                                                class="fa fa-check"></i></span><strong>Авторский надзор</strong></li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Авторский
+                                            надзор</strong></li>
                                 </ul>
                                 <a href="{{ asset('contact') }}"
                                     class="btn btn-block  btn-outline-secondary text-uppercase">Заказать проект</a>
@@ -168,9 +164,9 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <br>
+
         <div class="container d-none d-lg-block" id="table">
             <h4><b>Тариф BASE</b></h4>
             <hr class="table">
@@ -236,7 +232,8 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h2 class="h2_table">01</h2><br>
-                    Таблица использованных отделочных материалов, мебели, дверей, светильников с указанием наименования, количества, артикулов и мест продажи
+                    Таблица использованных отделочных материалов, мебели, дверей, светильников с указанием наименования,
+                    количества, артикулов и мест продажи
                     <br>
                     <br>
                 </div>
@@ -307,7 +304,8 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h2 class="h2_table">01</h2><br>
-                    Таблица использованных отделочных материалов, мебели, дверей, светильников с указанием наименования, количества, артикулов и мест продажи
+                    Таблица использованных отделочных материалов, мебели, дверей, светильников с указанием наименования,
+                    количества, артикулов и мест продажи
                     <br>
                 </div>
             </div>
@@ -322,10 +320,10 @@
                     <br>
                 </div>
             </div>
-            
+
         </div>
         <br>
-        <div class="container d-none d-lg-block" id="table" >
+        <div class="container d-none d-lg-block" id="table">
             <h4><b>Тариф PRO</b></h4>
             <hr class="table">
             <p>ТЕХНИЧЕСКОЕ ЗАДАНИЕ</p>
@@ -389,7 +387,8 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h2 class="h2_table">01</h2><br>
-                    Таблица использованных отделочных материалов, мебели, дверей, светильников с указанием наименования, количества, артикулов и мест продажи
+                    Таблица использованных отделочных материалов, мебели, дверей, светильников с указанием наименования,
+                    количества, артикулов и мест продажи
                     <br>
                 </div>
             </div>
@@ -441,14 +440,8 @@
                     <br>
                     <br>
                 </div>
-
             </div>
         </div>
         <br>
     </section>
-
-
-
-
-
 @endsection
