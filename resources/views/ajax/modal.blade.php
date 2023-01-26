@@ -2,5 +2,5 @@
             <div class="card-body">
                 <h5 class="card-title">{{$obj->name}}</h5>
                 <p class="card-text">{!! $obj->body !!}</p>
-                <a href="{{asset('work/'.$obj->id)}}" target="_blank" class="btn btn-light">Open in new window</a>
+                <a href="{{asset('work/'.$obj->id)}}" target="_blank" class="btn btn-light">Открыть в новом окне</a>
             </div>

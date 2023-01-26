@@ -1,27 +1,33 @@
 @extends("layouts.base")
 @push('styles')
-    <link rel="stylesheet" type="text/css" href="{{asset('portfolio.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('portfolio.css') }}" />
 @endpush
 @push('scripts')
-    <script src="{{asset('js/model.js')}}"></script>
+    <script src="{{ asset('js/model.js') }}"></script>
 @endpush
 
-@section("content")
-    <h2>Our portfolio</h2>
+@section('content')
     <hr>
-    <div class="row">
-    @foreach($objs as $one)
-    <div class="col md-5">
-        <div class="card" style="width: 100%;">
-            <img class="card-img-top" src="{{asset('uploads/'.$one->user_id.'/s'.$one->picture)}}" alt="{{$one->name}}">
-            <div class="card-body">
-                <h5 class="card-title">{{$one->name}}</h5>
-                <p class="card-text">{!! $one->body !!}</p>
-                <a href="#" class="btn btn-light model" data-id="{{$one->id}}">More details</a>
-                <a href="{{asset('work/'.$one->id)}}" target="_blank" class="btn btn-light">Open in new window</a>
-            </div>
+    <div class="container-fluid">
+        <h2 class="title">Мои работы</h2>
+        <div class="row justify-content-center">
+            @foreach ($objs as $one)
+                <div id="test" class="col-sm-3 main-portfolio">
+                    <div class='holder'>
+                        <a href="{{ asset('work/' . $one->id) }}" >
+                            <img class="card-img-top" src="{{ asset('uploads/' . $one->user_id . '/s' . $one->picture) }}"
+                                alt="{{ $one->name }}">
+                        </a>
+                        <div class='block'>
+                            <br>
+                            <a href="{{ asset('work/' . $one->id) }}" >
+                                <h6 class="navbar-brand a">{{ $one->name }}</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
         </div>
     </div>
-    @endforeach
-    </div>
-@endsection 
+
+@endsection

@@ -1,4 +1,7 @@
-@extends('layouts.base')
+@extends('layouts.admin_layout')
+
+@section('title', 'Мое портфолио')
+
 @push('scripts')
 <script>
 function delete_position(url,ask){
@@ -7,9 +10,9 @@ function delete_position(url,ask){
     }
     return false;
 }
-
 </script>
 @endpush
+
 @section('content')
 
 <div class="container">
@@ -17,13 +20,13 @@ function delete_position(url,ask){
         <div class="col-md-12">
 
             <div class="card">
-                <div class="card-header">My portfolio</div>
+                <div class="card-header">Мое портфолио</div>
 
                 <div class="card-body">
                     <form method="post" action="{{asset('portfolio/add')}}" enctype="multipart/form-data">
                     @csrf
                         <div class="form-group row">
-                            <label for="name" class="col-sm-2 col-form-label">Name</label>
+                            <label for="name" class="col-sm-2 col-form-label">Имя</label>
                             <div class="col-sm-10">
                             @error('name')
                                     <p class="text-danger">
@@ -34,7 +37,7 @@ function delete_position(url,ask){
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="body" class="col-sm-2 col-form-label">Description</label>
+                            <label for="body" class="col-sm-2 col-form-label">Описание</label>
                             <div class="col-sm-10">
                             @error('body')
                                     <p class="text-danger">
@@ -45,23 +48,23 @@ function delete_position(url,ask){
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="picture1" class="col-sm-2 col-form-label">Select image</label>
+                            <label for="picture1" class="col-sm-2 col-form-label">Выбрать изображение</label>
                             <div class="col-sm-10">
                             <input type="file" class="form-control-file" name="picture1" id="picture1">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Save</button>
+                            <button type="submit" class="btn btn-primary">Сохранить</button>
                             </div>
                         </div>
                     </form>
                     <table class="table table-bordered" width="100%">
                         <thead>
                         <tr>
-                            <th>Picture</th>
-                            <th>Name</th>
-                            <th>Action</th>
+                            <th>Изображение</th>
+                            <th>Имя</th>
+                            <th>Действие</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -74,8 +77,10 @@ function delete_position(url,ask){
                             {{{$work->name}}}
                             </td>
                             <td>
-                            <a href="#" onclick="delete_position('{{asset('work/delete/'.$work->id)}}','Вы действительно хотите её удолить?')" class="btn btn-danger btn-blok">Del</a>
-                            <a href="{{asset('work/'.$work->id)}}" class="btn btn-info btn-blok" target="_blank">Show</a>
+                            <a href="{{ route('work-update', $work->id)}}" class="btn btn-primary btn-blok" target="_blank">Редактировать</a>
+                            <a href="{{ route('work-delete', $work->id)}}" class="btn btn-danger btn-blok">Удалить</a>
+                           
+                            <a href="{{asset('work/'.$work->id)}}" class="btn btn-info btn-blok" target="_blank">Показать</a>
                             </td>
                         </tr>
                         @endforeach

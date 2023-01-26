@@ -25,11 +25,12 @@ class Imag{
         $filename = date('y_m_d_h_i_s').'.jpg';
       }
       $img = Image::make($path);
-      $img->resize(600, null, function ($constraint) {
+
+      $img->resize(1600, null, function ($constraint) {
             $constraint->aspectRatio();
       });
       $img->save($dir . $filename);
-      $img->resize(300, null, function ($constraint) {
+      $img->resize(600, null, function ($constraint) {
             $constraint->aspectRatio();
       });
       $picsmall = 's'. $filename;
